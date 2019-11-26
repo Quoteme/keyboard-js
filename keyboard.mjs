@@ -4,8 +4,8 @@
 // Get simple information about whether a key is pressed or not
 
 var keys = {};
-window.onkeyup		= e => keys[e.key] = true;
-window.onkeydown	= e => keys[e.key] = false;
+window.onkeyup		= e => keys[e.key] = false;
+window.onkeydown	= e => keys[e.key] = true;
 
 const pressed = key => keys[key] == true
 	? true
